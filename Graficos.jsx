@@ -1,6 +1,8 @@
 
 Grafico de barras 
 
+
+
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 function Chart({ products }) {
@@ -40,6 +42,11 @@ export default Chart;
 
 Grafico de Lineas Evolución de precios simulada
 
+
+
+
+
+
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 function LinePriceChart({ products }) {
@@ -68,7 +75,12 @@ function LinePriceChart({ products }) {
 export default LinePriceChart;
 
 
+
 Grafico de torta
+
+
+
+
 
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
