@@ -1,0 +1,162 @@
+Proyecto ABP: Procesamiento
+de datos con APIS REST
+Contexto del proyecto
+En el mundo actual, donde el comercio electrónico ha tomado un rol protagónico,
+es imprescindible poder navegar, analizar y entender los productos que se
+ofrecen. Este proyecto propone desarrollar una aplicación web interactiva que
+actúe como un explorador de productos, permitiendo no solo visualizar, filtrar y
+buscar productos, sino también obtener estadísticas y patrones a partir de sus
+datos.
+
+Utilizaremos:
+React para construir la interfaz interactiva.
+Tailwind CSS para una experiencia visual moderna.
+Axios para consumir datos desde una API externa.
+DummyJSON como fuente de productos.
+Conceptos básicos de ciencia de datos: estadística descriptiva, visualización,
+filtrado y procesamiento.
+
+Objetivo general
+Desarrollar una aplicación web interactiva de análisis de productos que permita
+filtrar, ordenar, visualizar y analizar datos de productos de una API externa,
+incorporando visualizaciones, estadísticas, categorías y exportación de
+resultados.
+Condiciones de desarrollo del proyecto
+Desarrollo incremental obligatorio
+El desarrollo del proyecto debe realizarse de forma progresiva, acompañando
+semana a semana los contenidos presentados en clase teórica y práctica. A
+Proyecto ABP: Procesamiento de datos con APIS REST 1
+medida que se avanza, se deben incorporar nuevas funcionalidades sin romper lo
+previamente implementado, respetando una arquitectura de componentes y una
+lógica coherente.
+
+Uso obligatorio de repositorio GitHub
+Cada estudiante deberá crear un único repositorio de GitHub al iniciar el
+proyecto. El desarrollo debe realizarse exclusivamente en dicho repositorio, el
+cual servirá como registro del proceso evolutivo del proyecto. No se permite
+cambiar de repositorio una vez comenzado, ya que al finalizar el curso, el
+estudiante deberá defender su proyecto, mostrando el historial de commits como
+evidencia del trabajo realizado a lo largo del tiempo.
+Cronograma por semanas
+
+Semana 1 – React + Axios + Búsqueda
+Objetivo:
+Consolidar los fundamentos de React: estado, props, efectos.
+Consumir la API de DummyJSON con Axios.
+Implementar búsqueda de productos.
+Tareas:
+Partir del proyecto anterior: obtener productos desde https://dummyjson.com/products?
+limit=100 .
+Mostrar una lista de productos con su nombre y precio.
+Implementar un input de búsqueda.
+Mostrar mensajes si no hay coincidencias.
+Agregar botón para mostrar/ocultar estadísticas.
+Evaluación:
+Mostrar correctamente productos filtrados.
+Buen uso de useState , useEffect , filter .
+Proyecto ABP: Procesamiento de datos con APIS REST 2
+
+Semana 2 – Tailwind + Componentización
+Objetivo:
+Estilizar con Tailwind CSS.
+Dividir la aplicación en componentes reutilizables.
+Tareas:
+Configurar Tailwind en el proyecto.
+Crear componentes: ProductList , ProductItem , StatsPanel , SearchBar , etc.
+Aplicar estilos responsivos.
+Implementar modo oscuro utilizando useRef .
+Evaluación:
+Código dividido en componentes.
+Estilos legibles, coherentes y accesibles.
+Se respeta la separación de lógica y presentación.
+Uso adecuado de useRef para alternar entre modo claro y oscuro.
+
+Semana 3 – Filtrado Avanzado y Ordenamiento
+Objetivo:
+Implementar filtros dinámicos y ordenamientos.
+Tareas:
+Agregar filtro por categoría ( category de DummyJSON).
+Agregar ordenamiento por precio y rating (ascendente/descendente).
+Mostrar lista desplegable ( select ) para elegir criterios.
+Evaluación:
+Filtros y ordenamientos funcionan correctamente.
+Se combina búsqueda con filtro y ordenamiento.
+
+Semana 4 – Estadísticas Detalladas
+Proyecto ABP: Procesamiento de datos con APIS REST 3
+Objetivo:
+Aplicar procesamiento de datos y estadística básica.
+Tareas:
+Mostrar:
+Precio promedio.
+Precio máximo y mínimo.
+Cantidad de productos por categoría.
+Cantidad de productos con stock > 50 , rating > 4.5 , etc.
+Precio promedio por categoría.
+Producto más caro y más barato por categoría.
+Promedio de rating general y por categoría.
+Evaluación:
+Cálculos correctos y actualizados al filtrar.
+Uso de métodos como reduce , map , filter .
+Aplicación de condicionales y manejo de errores.
+
+Semana 5 – Visualizaciones
+Objetivo:
+Incluir visualización de datos (gráficos simples).
+Tareas:
+Integrar la librería Recharts .
+Mostrar:
+Gráfico de barras: cantidad de productos por categoría.
+Gráfico de líneas: evolución de precios (simulada).
+Pie chart: proporción de productos según stock.
+Evaluación:
+Proyecto ABP: Procesamiento de datos con APIS REST 4
+Visualizaciones coherentes con los datos.
+Interfaz clara y comprensible.
+Actualización dinámica con filtros.
+
+Semana 6 – Exportación y Experiencia de Usuario
+Objetivo:
+Añadir funciones de exportación y mejorar la experiencia.
+Tareas:
+Exportar productos filtrados a JSON, CSV o Excel.
+Implementar paginación o carga perezosa (lazy loading).
+Agregar mensajes de éxito/error.
+Optimizar tiempo de carga y jerarquía visual.
+Evaluación:
+Exportación correcta y descargable.
+Mejora perceptible en usabilidad.
+Código organizado, con comentarios.
+
+Desafíos opcionales
+Implementar login con Google y guardar filtros preferidos.
+Crear un "modo comparación" entre dos productos.
+Agregar favoritos y persistir en localStorage .
+Conectar con otra API (por ejemplo: cotización de monedas) y mostrar precios
+convertidos.
+
+Evaluación general (por rúbrica)
+Criterio Puntos
+Funcionamiento general 20
+Proyecto ABP: Procesamiento de datos con APIS REST 5
+Componentización y reutilización 20
+Aplicación de filtros y lógica 20
+Estética con Tailwind 15
+Visualización de datos 15
+Exportación de resultados 10
+Total 100
+Recursos recomendados
+React Docs
+Tailwind CSS Docs
+Axios
+DummyJSON API
+Recharts
+Convert JSON to CSV
+
+Cierre del proyecto
+Al finalizar el curso, cada estudiante deberá realizar una exposición individual o
+grupal en la que presentará su aplicación funcionando, explicará las decisiones
+de diseño e implementación tomadas, analizará las estadísticas y visualizaciones
+obtenidas, y reflexionará sobre cómo el análisis de datos aporta valor a una
+aplicación web moderna. El repositorio GitHub será revisado para evaluar la
+evolución y progresividad del desarrollo.
