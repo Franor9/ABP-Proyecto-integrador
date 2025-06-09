@@ -1,7 +1,4 @@
 
-Grafico de barras 
-
-
 
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
@@ -40,10 +37,6 @@ export default Chart;
 
 
 
-Grafico de Lineas Evolución de precios simulada
-
-
-
 
 
 
@@ -73,10 +66,6 @@ function LinePriceChart({ products }) {
 }
 
 export default LinePriceChart;
-
-
-
-Grafico de torta
 
 
 
