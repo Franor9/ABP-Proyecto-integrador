@@ -25,7 +25,7 @@ Abajo a la izquierda se encuentra el botón para descargar el listado actual de 
 
 
 ¿Cómo usarlo?
-Cloná este repositorio.
+Clonar el repositorio.
 
 Ejecutá:
 npm install
